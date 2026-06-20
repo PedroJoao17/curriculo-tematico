@@ -1,0 +1,53 @@
+﻿.section-heading {
+  max-width: 46rem;
+  margin-bottom: 2rem;
+}
+
+.timeline {
+  position: relative;
+  display: grid;
+  gap: 1.5rem;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(var(--ct-secondary), var(--ct-primary));
+  }
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  padding: 1.5rem;
+
+  h3 {
+    margin: 0.5rem 0 0.2rem;
+  }
+
+  strong {
+    color: var(--ct-accent);
+  }
+
+  ul {
+    margin: 1rem 0 0;
+    color: #dbeafe;
+  }
+}
+
+.timeline-marker {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 999px;
+  background: var(--ct-secondary);
+  box-shadow: 0 0 30px rgba(6, 182, 212, 0.8);
+  margin-top: 0.4rem;
+}
+
+.period {
+  color: var(--ct-muted);
+}

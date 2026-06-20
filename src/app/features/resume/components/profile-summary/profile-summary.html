@@ -1,0 +1,20 @@
+﻿<section class="section-shell">
+  <div class="container">
+    <div class="glass-card summary-card">
+      <span class="badge-soft">Resumo profissional</span>
+
+      <h2 class="mt-3">
+        Um currículo usado como laboratório visual de frontend.
+      </h2>
+
+      <div class="row g-4 mt-2">
+        <div class="col-md-4" *ngFor="let item of summary; let i = index">
+          <article class="summary-item">
+            <strong>0{{ i + 1 }}</strong>
+            <p>{{ item }}</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,61 @@
+﻿<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-7">
+        <span class="badge-soft hero-animate">Currículo temático em Angular + GSAP</span>
+
+        <h1 class="display-4 fw-bold mt-4 hero-animate">
+          {{ profile.name }}
+          <span class="d-block text-gradient">{{ profile.title }}</span>
+        </h1>
+
+        <p class="lead hero-animate">
+          {{ profile.objective }}
+        </p>
+
+        <div class="d-flex flex-wrap gap-3 mt-4 hero-animate">
+          <a class="btn btn-primary btn-lg" href="#experiencia">
+            Ver jornada
+          </a>
+
+          <a class="btn btn-outline-light btn-lg" href="mailto:{{ profile.email }}">
+            Entrar em contato
+          </a>
+        </div>
+
+        <div class="contact-row hero-animate">
+          <span><i class="bi bi-geo-alt"></i> {{ profile.location }}</span>
+          <span><i class="bi bi-envelope"></i> {{ profile.email }}</span>
+          <span><i class="bi bi-phone"></i> {{ profile.phone }}</span>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="hero-card glass-card hero-animate">
+          <div class="status-dot"></div>
+
+          <p class="small text-uppercase mb-2">Perfil em destaque</p>
+          <h2>Full Stack Developer</h2>
+          <p>
+            Angular no frontend, Java Spring Boot no backend, banco de dados,
+            automações, CI/CD e monitoramento.
+          </p>
+
+          <div class="orbit-card">
+            <i class="bi bi-lightning-charge-fill"></i>
+            <span>Frontend experimental</span>
+          </div>
+
+          <div class="stack-grid">
+            <span>Angular</span>
+            <span>Spring Boot</span>
+            <span>Docker</span>
+            <span>GitHub Actions</span>
+            <span>n8n</span>
+            <span>MySQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

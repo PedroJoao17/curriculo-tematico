@@ -1,0 +1,21 @@
+﻿.summary-card {
+  padding: 2rem;
+}
+
+.summary-item {
+  height: 100%;
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid var(--ct-border);
+
+  strong {
+    color: var(--ct-accent);
+    font-size: 1.5rem;
+  }
+
+  p {
+    color: #dbeafe;
+    margin: 1rem 0 0;
+  }
+}

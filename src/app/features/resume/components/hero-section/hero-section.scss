@@ -1,0 +1,87 @@
+﻿.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 6rem 0 4rem;
+  overflow: hidden;
+}
+
+.lead {
+  color: #dbeafe;
+  max-width: 62rem;
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  color: var(--ct-muted);
+
+  span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+}
+
+.hero-card {
+  min-height: 31rem;
+  position: relative;
+  padding: 2rem;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: auto -6rem -6rem auto;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 50%;
+    background: rgba(6, 182, 212, 0.28);
+    filter: blur(2rem);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 5vw, 4rem);
+  }
+
+  p {
+    color: #dbeafe;
+  }
+}
+
+.status-dot {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 999px;
+  background: var(--ct-accent);
+  box-shadow: 0 0 30px rgba(250, 204, 21, 0.9);
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.orbit-card {
+  display: inline-flex;
+  gap: 0.6rem;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--ct-primary), var(--ct-secondary));
+  margin: 2rem 0;
+  font-weight: 700;
+}
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+
+  span {
+    border: 1px solid var(--ct-border);
+    border-radius: 1rem;
+    padding: 0.8rem;
+    background: rgba(255, 255, 255, 0.08);
+  }
+}

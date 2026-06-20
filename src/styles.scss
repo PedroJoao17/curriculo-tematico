@@ -1,0 +1,71 @@
+﻿@import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+:root {
+  --ct-bg: #080914;
+  --ct-bg-soft: #111427;
+  --ct-surface: rgba(255, 255, 255, 0.08);
+  --ct-surface-strong: rgba(255, 255, 255, 0.14);
+  --ct-primary: #7c3aed;
+  --ct-secondary: #06b6d4;
+  --ct-accent: #facc15;
+  --ct-text: #f8fafc;
+  --ct-muted: #a5b4fc;
+  --ct-border: rgba(255, 255, 255, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(124, 58, 237, 0.28), transparent 32rem),
+    radial-gradient(circle at top right, rgba(6, 182, 212, 0.2), transparent 28rem),
+    var(--ct-bg);
+  color: var(--ct-text);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.section-shell {
+  padding: 5rem 0;
+}
+
+.glass-card {
+  border: 1px solid var(--ct-border);
+  background: var(--ct-surface);
+  border-radius: 1.5rem;
+  backdrop-filter: blur(18px);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--ct-secondary), var(--ct-primary), var(--ct-accent));
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.badge-soft {
+  border: 1px solid var(--ct-border);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--ct-text);
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .section-shell {
+    padding: 3rem 0;
+  }
+}
